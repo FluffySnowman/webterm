@@ -8,14 +8,6 @@
 <body>
 
     <script>
-        $('body').terminal({
-            echo: function(what) {
-                this.echo('Output: , ' + what);
-            }
-        }, {
-            greetings: 'My First Web Terminal'
-        });
-
 
         $('body').terminal({
             cat: function() {
@@ -23,6 +15,12 @@
             }
         });
 
+        $('body').terminal({
+            echo: function(what) {
+                this.echo('Output: , ' + what);
+            }
+        });
+        
     </script>
 
 </body>
