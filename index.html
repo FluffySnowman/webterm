@@ -38,16 +38,19 @@
 	<script>
 		$('body').terminal({
 			iam: function (name) {
-				this.echo('Hello, ' + name +
-					'. Welcome to GeeksForGeeks');
+				this.echo('Hello, ' + name);
 			},
 			founder: function () {
-				this.echo('no');
+				this.echo('fluffy snowman');
+			},
+			echo: function(echovar) {
+				this.echo(echovar);
 			},
 			help: function () {
 				this.echo('iam - iam command and '
 				+ 'pass your name as argument\n'
-				+ 'founder to know the founder');
+				+ 'founder to know the founder\n'
+				+ 'echo - to print anything');
 			},
 		}, {
 			greetings: 'Welcome to the web based terminal'
